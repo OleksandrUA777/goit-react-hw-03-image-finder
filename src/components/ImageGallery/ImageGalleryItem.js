@@ -29,7 +29,7 @@ export class ImageGalleryItem extends Component {
           />
         </Item>
         {this.state.open && (
-          <Modal closeModal={this.closeModal} src={this.state.src} />
+          <Modal closeModal={this.closeModal} src={this.state.src} alt={tags} />
         )}
       </>
     );

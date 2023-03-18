@@ -22,7 +22,7 @@ export class Modal extends Component {
       <>
         <Overlay onClick={this.closeModal} />
         <ModalWindow>
-          <img src={this.props.src} alt="image" width="600" />
+          <img src={this.props.src} alt={this.props.alt} width="600" />
         </ModalWindow>
       </>
     );
@@ -31,4 +31,5 @@ export class Modal extends Component {
 
 Modal.propTypes = {
   src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
 };
